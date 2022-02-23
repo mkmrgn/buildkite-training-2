@@ -5,14 +5,20 @@ steps:
   - label: "Reading a secret environment variable from the pipeline settings :thumbsdown:"
     command: "echo pipeline settings secret: $PIPELINE_SETTINGS_SECRET"    
 
+  - block: ":double_vertical_bar:"
+
   - label: "Reading a secret environment variable from the pipeline yaml :weary:"
     command: "echo pipeline yaml secret: $PIPELINE_YAML_SECRET"
+
+  - block: ":double_vertical_bar:"
 
   - label: "Reading a secret from an agent environment hook (incorrectly!) :closed_lock_with_key:"
     key: "show-environment-secret-incorrect"
     commands: 
     - "echo agent environment secret: $MY_ENVIRONMENT_SECRET"
     - "echo agent environment thing: $MY_ENVIRONMENT_THING"
+
+  - block: ":double_vertical_bar:"
 
   - label: "Reading a secret from an agent environment hook (correctly!) :unlock:"
     key: "show-environment-secret-correct"
