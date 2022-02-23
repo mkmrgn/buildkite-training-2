@@ -12,4 +12,4 @@ steps:
 
   - label: "Reading a secret from an agent environment hook (correctly!) :unlock:"
     key: "show-environment-secret-correct"
-    command: "echo secret: $(scripts/show-environment-secret.sh)"
+    command: "scripts/show-environment-secret.sh"
