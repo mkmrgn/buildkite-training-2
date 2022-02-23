@@ -2,7 +2,7 @@ env:
   PIPELINE_YAML_SECRET: "please don't store secrets as pipeline environment variables!"
 
 steps:
-  - label: "Reading a secret from the pipeline environment variable :weary:
+  - label: "Reading a secret from the pipeline environment variable :weary:"
     command: "echo pipeline environment secret: $PIPELINE_YAML_SECRET"
 
   - label: "Reading a secret from an agent environment hook (incorrectly!) :closed_lock_with_key:"
