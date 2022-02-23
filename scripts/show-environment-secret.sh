@@ -1,5 +1,5 @@
 echo environment secret: $MY_ENVIRONMENT_SECRET
 if [[ "$MY_ENVIRONMENT_SECRET" == "correct horse battery staple" ]]; then
-  echo "<--- password is correct, though"
+  echo "^^ password is correct, though"
 fi
-echo -e "\nenvironment thing: $MY_ENVIRONMENT_THING";
+echo "environment thing: $MY_ENVIRONMENT_THING";
