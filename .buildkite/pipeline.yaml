@@ -1,9 +1,9 @@
 steps:
 
   - label: "Reading a secret from an agent environment hook (incorrectly!) :closed_lock_with_key:"
-    key: "show-environment-secret"
+    key: "show-environment-secret-incorrect"
     command: "echo password: $MY_ENVIRONMENT_SECRET"
 
   - label: "Reading a secret from an agent environment hook (correctly!) :unlock:"
-    key: "show-environment-secret"
+    key: "show-environment-secret-correct"
     command: "echo password: $(scripts/show-environment-secret.sh)"
