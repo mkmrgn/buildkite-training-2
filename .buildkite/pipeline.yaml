@@ -1,5 +1,5 @@
 env:
-  PIPELINE_YAML_SECRET: "please don't store secrets as pipeline environment variables!"
+  PIPELINE_YAML_SECRET: "please don\'t store secrets as pipeline environment variables!"
 
 steps:
   - label: "Reading a secret from the pipeline environment variable :weary:"
