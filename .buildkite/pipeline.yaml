@@ -1,4 +1,4 @@
 steps:
   - label: "Reading a secret from an agent hook :closed_lock_with_key:"
     key: "show-environment-secret"
-    command: "echo password: $(.scripts/show-environment-secret.sh)"
+    command: "echo password: $(scripts/show-environment-secret.sh)"
