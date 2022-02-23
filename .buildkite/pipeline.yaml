@@ -1,9 +1,15 @@
+env:
+  PIPELINE_YAML_SECRET: "please don't put secrets here"
+
 steps:
 
   - label: "Reading a secret from an agent environment hook (incorrectly!) :closed_lock_with_key:"
     key: "show-environment-secret-incorrect"
-    command: "echo password: $MY_ENVIRONMENT_SECRET"
+    commands: 
+    - "echo environment secret: $MY_ENVIRONMENT_SECRET"
+    - "echo environment thing: $MY_ENVIRONMENT_THING"
+
 
   - label: "Reading a secret from an agent environment hook (correctly!) :unlock:"
     key: "show-environment-secret-correct"
-    command: "echo password: $(scripts/show-environment-secret.sh)"
+    command: "echo secret: $(scripts/show-environment-secret.sh)"
